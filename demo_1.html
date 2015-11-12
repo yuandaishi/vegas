@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>轮播插件demo</title>
+		<link rel="stylesheet" type="text/css" href="vegas.min.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box" style="width: 100%;height: 300px;">
+			<p style="z-index: 99999;">我们是害虫，我们是害虫，我们是一群大害虫</p>
+		</div>
+		<div class="">
+			我们是害虫，我们是害虫，我们是大害虫，一大群逗逼正在行进中
+		</div>
+	</body>
+	<script src="jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vegas.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".box").vegas({
+				slides: [{
+					src: '/img/3.jpg'
+				}, {
+					src: '/img/4.jpg'
+				}, {
+					src: '/img/5.jpg'
+				}, {
+					src: '/img/6.jpg'
+				}],
+				transition: ['slideLeft2','slideRight2','flash2','slideDown2'],
+				overlay: 'overlays/09.png',
+			});
+		})
+	</script>
+</html>
